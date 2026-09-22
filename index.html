@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cosmic Voyage — A Parallax Journey</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="parallax-stage">
+    <div class="layer layer--stars-far" data-speed="0.05"></div>
+    <div class="layer layer--nebula" data-speed="0.12">
+      <div class="nebula nebula--violet"></div>
+      <div class="nebula nebula--teal"></div>
+      <div class="nebula nebula--rose"></div>
+    </div>
+    <div class="layer layer--stars-mid" data-speed="0.25"></div> 
+    <div class="layer layer--planets" data-speed="0.45">
+      <div class="planet planet--earth"    style="top: 60vh;"></div>
+      <div class="planet planet--moon"     style="top: 155vh;"></div>
+      <div class="planet planet--mars"     style="top: 250vh;"></div>
+      <div class="planet planet--saturn" style="top: 360vh;">
+        <div class="planet__ring"></div>
+      </div>
+      <div class="planet planet--galaxy"   style="top: 470vh;"></div>
+    </div>
+    <div class="layer layer--stars-near" data-speed="0.65"></div>
+    <div class="comet" data-speed="0.8"></div>
+  </div>
+
+
+  <main class="content">
+
+    <section class="scene scene--hero">
+      <h1>COSMIC VOYAGE</h1>
+      <p class="subtitle">Scroll to begin the journey</p>
+      <span class="scroll-cue">↓</span>
+    </section>
+
+    <section class="scene">
+      <div class="scene__panel">
+        <h2>Leaving Earth</h2>
+        <p>The blue marble shrinks behind us as engines burn toward the dark.</p>
+      </div>
+    </section>
+    <section class="scene">
+      <div class="scene__panel">
+        <h2>Passing the Moon</h2>
+        <p>A silent, cratered witness to everything that has ever left home.</p>
+      </div>
+    </section>
+
+    <section class="scene">
+      <div class="scene__panel">
+        <h2>Mars Flyby</h2>
+        <p>Rust-red dust storms churn far below as we slip past the fourth world.</p>
+      </div>
+    </section>
+
+    <section class="scene">
+      <div class="scene__panel">
+        <h2>Into the Nebula</h2>
+        <p>Color without sound — light bent through clouds of ancient stardust.</p>
+      </div>
+    </section>
+
+    <section class="scene">
+      <div class="scene__panel">
+        <h2>Saturn's Rings</h2>
+        <p>A ribbon of ice and rock, older than the question of who's watching.</p>
+      </div>
+    </section>
+
+    <section class="scene scene--final">
+      <div class="scene__panel">
+        <h2>Into the Galaxy</h2>
+        <p>Every star here has its own worlds, its own quiet mornings.</p>
+        <p class="thanks">Thanks for the journey. ✦</p>
+      </div>
+    </section>
+
+  </main>
+
+<script src="script.js"></script>
+</body>
+</html>
